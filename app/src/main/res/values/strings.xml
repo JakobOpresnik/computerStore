@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name" translatable="false">computer_store</string>
+    <string name="add_computer">ADD COMPUTER</string>
+    <string name="about">ABOUT</string>
+    <string name="exit_app">EXIT APP</string>
+    <string name="my_computer_store">MY COMPUTER STORE</string>
+    <string name="scan_qr_code">SCAN QR CODE</string>
+    <string name="add">add</string>
+    <string name="my_computer_store_inventory">INVENTORY</string>
+    <string name="back">BACK</string>
+    <string name="naziv_label">TITLE</string>
+    <string name="cpu_label">PROCESSOR</string>
+    <string name="gpu_label">GRAPHICS\nCARD</string>
+    <string name="ram_label">RAM</string>
+    <string name="disk_label">DISC</string>
+    <string name="cena_label">PRICE</string>
+    <string name="zaslon_label">SCREEN</string>
+    <string name="pc_model">model</string>
+    <string name="cpu_model">model</string>
+    <string name="cpu_hitrost">speed</string>
+    <string name="cpu_jedra">cores</string>
+    <string name="cpu_niti">threads</string>
+    <string name="gpu_model">model</string>
+    <string name="gpu_hitrost">speed</string>
+    <string name="gpu_jedra">cores</string>
+    <string name="ram_kapaciteta">capacity</string>
+    <string name="ram_enote">units</string>
+    <string name="disk_kapaciteta">capacity</string>
+    <string name="disk_tip" translatable="false">HDD/SSD</string>
+    <string name="zaslon_sirina">width</string>
+    <string name="zaslon_visina">height</string>
+    <string name="zaslon_hz" translatable="false">Hz</string>
+    <string name="zaslon_panel">IPS/TN</string>
+    <string name="valuta" translatable="false">€</string>
+    <string name="avtor">author</string>
+    <string name="app_ime">Computer store</string>
+    <string name="app_opis">App for inputing computers</string>
+    <string name="verzija" translatable="false">3.0</string>
+    <string name="jakob_opresnik" translatable="false">Jakob Oprešnik</string>
+    <string name="about_app">ABOUT APP</string>
+    <string name="aplikacija">application</string>
+    <string name="opis">description</string>
+    <string name="verzija_label">version</string>
+    <string name="settings"><b>SETTINGS</b></string>
+    <string name="dark_mode">DARK MODE</string>
+    <string name="currency"><b>CURRENCY</b></string>
+    <string name="view_computers">VIEW COMPUTERS</string>
+
+    <string-array name="currencies">
+        <item>EUR (€)</item>
+        <item>USD ($)</item>
+        <item>GBP (£)</item>
+        <item>JPY (¥)</item>
+    </string-array>
+</resources>

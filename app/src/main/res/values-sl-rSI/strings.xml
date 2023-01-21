@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_computer">DODAJ RAČUNALNIK</string>
+    <string name="about">O APLIKACIJI</string>
+    <string name="exit_app">ZAPRI</string>
+    <string name="my_computer_store">MOJA RAČUNALNIŠKA TRGOVINA</string>
+    <string name="scan_qr_code">SKENIRAJ\nQR KODO</string>
+    <string name="my_computer_store_inventory">INVENTAR</string>
+    <string name="back">NAZAJ</string>
+    <string name="naziv_label">NAZIV</string>
+    <string name="cpu_label">PROCESOR</string>
+    <string name="gpu_label">GRAFIČNA\nKARTICA</string>
+    <string name="ram_label">RAM</string>
+    <string name="disk_label">DISK</string>
+    <string name="cena_label">CENA</string>
+    <string name="zaslon_label">ZASLON</string>
+    <string name="pc_model">model</string>
+    <string name="cpu_model">model</string>
+    <string name="cpu_hitrost">hitrost</string>
+    <string name="cpu_jedra">jedra</string>
+    <string name="cpu_niti">niti</string>
+    <string name="gpu_model">model</string>
+    <string name="gpu_hitrost">hitrost</string>
+    <string name="gpu_jedra">jedra</string>
+    <string name="ram_kapaciteta">kapaciteta</string>
+    <string name="ram_enote">enote</string>
+    <string name="disk_kapaciteta">kapaciteta</string>
+    <string name="zaslon_sirina">širina</string>
+    <string name="zaslon_visina">višina</string>
+    <string name="zaslon_panel">panel</string>
+    <string name="avtor">avtor</string>
+    <string name="app_ime">Računalniška trgovina</string>
+    <string name="app_opis">Aplikacija za vnos\nračunalnikov v sistem</string>
+    <string name="add">dodaj</string>
+    <string name="verzija_label">verzija</string>
+    <string name="opis">opis</string>
+    <string name="aplikacija">aplikacija</string>
+    <string name="about_app">O APLIKACIJI</string>
+    <string name="settings">NASTAVITVE</string>
+    <string name="dark_mode">TEMNI NAČIN</string>
+    <string name="currency">VALUTA</string>
+</resources>

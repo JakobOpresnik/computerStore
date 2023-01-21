@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_computer">COMPUTER HINZUFÜGEN</string>
+    <string name="about">ÜBER</string>
+    <string name="exit_app">APP BEENDEN</string>
+    <string name="my_computer_store">MEIN COMPUTERLADEN</string>
+    <string name="scan_qr_code">QR-CODE\nSCANNEN</string>
+    <string name="my_computer_store_inventory">INVENTAR</string>
+    <string name="back">ZURÜCK</string>
+    <string name="naziv_label">TITEL</string>
+    <string name="cpu_label">PROZESSOR</string>
+    <string name="gpu_label">GRAFIK\nKARTE</string>
+    <string name="ram_label">RAM</string>
+    <string name="disk_label">PLATTE</string>
+    <string name="cena_label">PREIS</string>
+    <string name="zaslon_label">BILDSCHIRM</string>
+    <string name="pc_model">Model</string>
+    <string name="cpu_model">Model</string>
+    <string name="cpu_hitrost">Geschwindigkeit</string>
+    <string name="cpu_jedra">Kerne</string>
+    <string name="cpu_niti">Faden</string>
+    <string name="gpu_model">Model</string>
+    <string name="gpu_hitrost">Geschwindigkeit</string>
+    <string name="gpu_jedra">Kerne</string>
+    <string name="ram_kapaciteta">Kapazität</string>
+    <string name="ram_enote">Einheiten</string>
+    <string name="disk_kapaciteta">Kapazität</string>
+    <string name="zaslon_sirina">Breite</string>
+    <string name="zaslon_visina">Höhe</string>
+    <string name="zaslon_panel">Tafel</string>
+    <string name="avtor">Autor</string>
+    <string name="app_ime">Computerladen</string>
+    <string name="app_opis">Eine Anwendung zum\nEingeben von Computern\nin das System</string>
+    <string name="add">Hinzufügen</string>
+    <string name="verzija_label">Ausführung</string>
+    <string name="opis">Beschreibung</string>
+    <string name="aplikacija">Anwendung</string>
+    <string name="about_app">ÜBER APP</string>
+    <string name="settings">EINSTELLUNGEN</string>
+    <string name="dark_mode">DUNKLER MODUS</string>
+    <string name="currency">WÄHRUNG</string>
+</resources>

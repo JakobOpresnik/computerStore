@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InputActivity">
+
+        <!-- <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#3061FF"
+            android:onClick="addComputer"
+            android:text="@string/add"
+            android:textColor="#FFFFFF"
+            app:icon="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/price_input"
+            tools:ignore="TextContrastCheck" /> -->
+
+
+        <ImageView
+            android:id="@+id/add_button"
+            android:layout_width="@dimen/add_button_size"
+            android:layout_height="@dimen/add_button_size"
+            android:layout_marginTop="35dp"
+            android:onClick="addComputer"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/cena"
+            app:srcCompat="@drawable/add_button" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/laptop_logo_width"
+            android:layout_height="@dimen/laptop_logo_height"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/brand_input"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/laptop" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="@dimen/laptop_logo_width"
+            android:layout_height="@dimen/laptop_logo_height"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/brand_input"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/laptop" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:gravity="center"
+            android:text="@string/my_computer_store_inventory"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintBottom_toTopOf="@+id/brand_input"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/title_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="-9dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04622871" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96107054" />
+
+        <!-- <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#A9A9A9"
+            android:onClick="back"
+            android:text="@string/back"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/add_button"
+            app:layout_constraintTop_toBottomOf="@+id/price_input"
+            tools:ignore="TextContrastCheck" /> -->
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="@dimen/back_button_size"
+            android:layout_marginStart="256dp"
+            android:layout_marginTop="22dp"
+            android:onClick="back"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/add_button"
+            app:layout_constraintTop_toBottomOf="@+id/price_input"
+            app:srcCompat="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/naziv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/naziv_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toTopOf="@+id/input_top_guideline" />
+
+        <TextView
+            android:id="@+id/processor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/cpu_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/naziv" />
+
+        <TextView
+            android:id="@+id/graficna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:text="@string/gpu_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/processor" />
+
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:text="@string/ram_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/graficna" />
+
+        <TextView
+            android:id="@+id/disk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/disk_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/ram" />
+
+        <TextView
+            android:id="@+id/cena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="73dp"
+            android:text="@string/cena_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/zaslon" />
+
+        <TextView
+            android:id="@+id/zaslon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/zaslon_label"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/left_margin"
+            app:layout_constraintTop_toBottomOf="@+id/disk" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/input_top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.16826266" />
+
+        <EditText
+            android:id="@+id/brand_input"
+            android:layout_width="@dimen/long_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="10dp"
+            android:hint="@string/pc_model"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toTopOf="@+id/input_top_guideline" />
+
+        <EditText
+            android:id="@+id/procesor_input_brand"
+            android:layout_width="@dimen/medium_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="10dp"
+            android:hint="@string/cpu_model"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/brand_input" />
+
+        <EditText
+            android:id="@+id/procesor_input_speed"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/cpu_hitrost"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/procesor_input_cores"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/procesor_input_brand"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/procesor_input_cores"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="10dp"
+            android:hint="@string/cpu_jedra"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/procesor_input_brand"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/procesor_input_threads"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/cpu_niti"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/graficna_input_brand"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/procesor_input_cores"
+            app:layout_constraintTop_toBottomOf="@+id/procesor_input_speed"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/graficna_input_brand"
+            android:layout_width="@dimen/long_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="12dp"
+            android:hint="@string/gpu_model"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/procesor_input_cores" />
+
+        <EditText
+            android:id="@+id/graficna_input_speed"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="10dp"
+            android:hint="@string/gpu_hitrost"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/graficna_input_brand"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/graficna_input_cores"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/gpu_jedra"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/ram_input_capacity"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/graficna_input_speed"
+            app:layout_constraintTop_toBottomOf="@+id/graficna_input_brand"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/ram_input_capacity"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="15dp"
+            android:hint="@string/ram_kapaciteta"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/graficna_input_speed" />
+
+        <EditText
+            android:id="@+id/ram_input_sticks"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/ram_enote"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/disk_input_capacity"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/disk_input_capacity"
+            app:layout_constraintTop_toBottomOf="@+id/graficna_input_cores"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/disk_input_capacity"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="10dp"
+            android:hint="@string/disk_kapaciteta"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ram_input_capacity" />
+
+        <EditText
+            android:id="@+id/disk_input_type"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
+            android:hint="@string/disk_tip"
+            app:layout_constraintBottom_toTopOf="@+id/screen_input_width"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ram_input_capacity"
+            app:layout_constraintTop_toBottomOf="@+id/ram_input_sticks"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/screen_input_width"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="60dp"
+            android:hint="@string/zaslon_sirina"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ram_input_capacity" />
+
+        <EditText
+            android:id="@+id/screen_input_height"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/zaslon_visina"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/screen_input_refresh_rate"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/screen_input_width"
+            app:layout_constraintTop_toBottomOf="@+id/disk_input_type" />
+
+        <EditText
+            android:id="@+id/screen_input_refresh_rate"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="8dp"
+            android:hint="@string/zaslon_hz"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/screen_input_width" />
+
+        <EditText
+            android:id="@+id/screen_input_panel"
+            android:layout_width="@dimen/short_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="11dp"
+            android:hint="@string/zaslon_panel"
+            app:layout_constraintBottom_toTopOf="@+id/price_input"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/screen_input_refresh_rate"
+            app:layout_constraintTop_toBottomOf="@+id/screen_input_height"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/price_input"
+            android:layout_width="@dimen/long_input_field_width"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/input_left_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/screen_input_refresh_rate" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/input_left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.34" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
